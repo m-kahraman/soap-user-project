@@ -1,0 +1,156 @@
+{
+	"info": {
+		"_postman_id": "a9070540-96cf-426c-b4d4-c07b13c0c8c1",
+		"name": "UserService-project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34553477"
+	},
+	"item": [
+		{
+			"name": "postman wsdl cekme",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "test",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "test",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8085/services/UserServiceWs?wsdl",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"services",
+						"UserServiceWs"
+					],
+					"query": [
+						{
+							"key": "wsdl",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "postman soapMethod addUser istegi",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:soap=\"http://soapuserservice.example.soap.com.tr\">\r\n   <soapenv:Header/>\r\n   <soapenv:Body>\r\n      <soap:addUser>\r\n         <name>alper</name>\r\n         <surname>oner</surname>\r\n      </soap:addUser>\r\n   </soapenv:Body>\r\n</soapenv:Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8085/services/UserServiceWs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"services",
+						"UserServiceWs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "postman soapMethod getAllUsers istegi",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:soap=\"http://soapuserservice.example.soap.com.tr\">\r\n   <soapenv:Header/>\r\n   <soapenv:Body>\r\n      <soap:getAllUsers/>\r\n   </soapenv:Body>\r\n</soapenv:Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8085/services/UserServiceWs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"services",
+						"UserServiceWs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "postman soapMethod sayHello istegi",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:soap=\"http://soapuserservice.example.soap.com.tr\">\r\n   <soapenv:Header/>\r\n   <soapenv:Body>\r\n      <soap:getAllUsers/>\r\n   </soapenv:Body>\r\n</soapenv:Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8085/services/UserServiceWs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"services",
+						"UserServiceWs"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
