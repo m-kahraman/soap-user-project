@@ -5,7 +5,12 @@ soap-user-project
 ```
 * Kurulum Notları
 * Soap Servisi projesinde java 1.8 kullanılmıstır.
-... Eklenecek
+* Window -> Preferance -> Java -> InstalledJRE's ->java jdk 1.8 gösterilir
+    Add -> C:\Program Files\Java\jdk1.8.0_231 yapılır sts versiyonu remove edilerek apply and close yapılır.
+* Maven Update yapılır (Alt+F5)yada proje sagtık maven -> update project
+* Proje sagtık ->Run -> Maven build tıklanır 
+    clean install yazılıp skip test tiklenerek aplly basılır sonra runa basılarak maven clean install işlemi yapılır.
+* Projeyi spring bootda ayaga kaldırmak icin proje sagtık -> Run -> Spring Boot Application tıklanarak uygulama ayaga kaldırılır.
 
 
 Gitten çekildikten sonra 
